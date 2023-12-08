@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.darkTheme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+body {
+    background: var(--primary-color);
+}
+
+.container {
+    margin: 20px 100px 0;
+}
+
+.container nav ul {
+    display: flex;
+    gap: 570px;
+}
+
+.container nav ul li {
+    cursor: pointer;
+}
+
+.container ul li:hover {
+    color: orangered;
+}
+
+header span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+header .img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.darkimg {
+    filter: brightness(4.4);
+}
+
+header li {
+    list-style-type: none;
+    color: var(--secondary-color);
+}
+
+main .body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0;
+    position: absolute;
+}
+
+main .body1 {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    color: var(--secondary-color);
+}
+
+main .body1 h1 {
+    font-size: 45px;
+}
+
+main .body1 h1 span {
+    color: orangered;
+}
+
+main .body1 button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 40px;
+    width: 120px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+main .body1 button:hover {
+    background-color: orangered;
+}
+
+main .body2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .body2 img {
+    height: 510px;
+    width: 400px;
+    position: absolute;
+    transition: bottom 1s, right 1s;
+    cursor: pointer;
+    bottom: -6px;
+    right: 94px;
+}
+
+.body2:hover .backImg {
+    bottom: 40px;
+}
+
+.body2:hover .mainImg {
+    right: 119px;
+}
+
+main .logo {
+    margin-top: 100px;
+    color: var(--secondary-color);
+    font-size: 23px;
+    display: flex;
+    gap: 23px;
+    cursor: pointer;
+}
+
+.fa-linkedin-in:hover {
+    color: orangered;
+}
+
+.fa-behance:hover {
+    color: orangered;
+}
+
+.fa-globe:hover {
+    color: orangered;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.items img {
+    filter: brightness(1.4);
+}
+
+.img img {
+    color: var(--secondary-color);
+}
